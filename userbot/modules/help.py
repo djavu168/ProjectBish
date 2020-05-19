@@ -33,7 +33,7 @@ async def help(event):
                         break
                 else:
                     await event.edit(
-                        "`There is no command or module`: **{args}**.")
+                        f"`There is no command or module`:  **{args}**.")
                     return False
                 if cmd is not None and usage is not None:
                     string = (
