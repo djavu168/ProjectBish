@@ -31,8 +31,6 @@ async def help(event):
             usage = None
             for module in CMD_HELP:
                 for key, value in CMD_HELP.get(module).items():
-                    await event.respond(key)
-                    await event.respond(key)
                     if args == key:
                         usage = value
                         break
