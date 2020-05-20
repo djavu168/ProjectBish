@@ -19,11 +19,14 @@ async def help(event):
             string = (
                 "**Query**:\n\n"
                 f"    `{args}`\n\n"
-                f"**Command**:\n\n"
             )
-            for cmd, usage in query.items():
-                string += f">`{cmd}`\n"
-                string += f"**Usage**:\n{usage}\n\n"
+            if args == "anti_spambot":
+                string += f"**Usage**:\n{query}"
+            else:
+                string += "**Command**:\n\n"
+                for cmd, usage in query.items():
+                    string += f">`{cmd}`\n"
+                    string += f"**Usage**:\n{usage}\n\n"
         else:
             cmd, usage = None, None
             for module in CMD_HELP:
