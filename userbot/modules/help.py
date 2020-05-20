@@ -43,9 +43,11 @@ async def help(event):
                     )
                     break
                 else:
-                    await event.edit(
-                        f"`There is no command or module`:  **{args}**.")
-                    return False
+                    continue
+            else:
+                await event.edit(
+                    f"`There is no command or module`:  **{args}**.")
+                return False
         await event.edit(string)
     else:
         string = (
