@@ -180,18 +180,31 @@ async def remove_profilepic(delpfp):
 
 CMD_HELP.update({
     "profile":
-    ">`.username <new_username>`"
-    "\nUsage: Changes your Telegram username."
-    "\n\n>`.name <firstname>` or >`.name <firstname> <lastname>`"
-    "\nUsage: Changes your Telegram name.(First and last name will get split by the first space)"
-    "\n\n>`.setpfp`"
-    "\nUsage: Reply with .setpfp to an image to change your Telegram profie picture."
-    "\n\n>`.setbio <new_bio>`"
-    "\nUsage: Changes your Telegram bio."
-    "\n\n>`.delpfp` or >`.delpfp <number>/<all>`"
-    "\nUsage: Deletes your Telegram profile picture(s)."
-    "\n\n>`.reserved`"
-    "\nUsage: Shows usernames reserved by you."
-    "\n\n>`.count`"
-    "\nUsage: Counts your groups, chats, bots etc..."
+    {
+        ".username":
+        "Changes your Telegram username.\n"
+        "**Hints**:\n>`.username blabla`",
+
+        ".name":
+        "Changes your Telegram name. "
+        "(First and last name will get split by the first space)\n"
+        "**Hints**:\n>`.name Foo` or >`.name Foo Bar`",
+
+        ".setpfp":
+        "Reply to an image to change your Telegram profie picture.",
+
+        ".setbio":
+        "Changes your Telegram bio.",
+
+        ".delpfp":
+        "Deletes your Telegram profile picture(s).\n"
+        "**Hints**:\n>`.delpfp 5` to delete 5 profile picture, "
+        "use >`.delpfp all` to delete all of your profile picture",
+
+        ".reserved":
+        "Shows usernames reserved by you.",
+
+        ".count":
+        "Counts your groups, chats, bots etc..."
+    }
 })

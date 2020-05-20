@@ -69,7 +69,10 @@ async def _(fry):
 
 CMD_HELP.update({
     "deepfry":
-    ">`.df` or >`.df [level(1-8)]`"
-    "\nUsage: deepfry image/sticker from the reply."
-    "\n@image_deepfrybot"
+    {
+        ".df":
+        "deepfry image/sticker from the reply."
+        "\n@image_deepfrybot\n"
+        "**Hints**:\nUse level to make the target more crisp >`.df 8`"
+    }
 })

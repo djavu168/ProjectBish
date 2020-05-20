@@ -64,8 +64,12 @@ async def lyrics(lyric):
 
 CMD_HELP.update({
     "lyrics":
-    ">`.lyrics` **<artist name> - <song name>**"
-    "\nUsage: Get lyrics matched artist and song."
-    "\n\n>`.lyrics now`"
-    "\nUsage: Get lyrics artist and song from current lastfm scrobbling."
+    {
+        ".lyrics":
+        "Get lyrics matched artist and song.\n"
+        "**Hints**:\n>`.lyrics nicki minaj - super bass`",
+
+        ".lyrics now":
+        "Get lyrics artist and song from current lastfm scrobbling."
+    }
 })

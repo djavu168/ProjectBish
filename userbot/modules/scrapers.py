@@ -639,40 +639,72 @@ def deEmojify(inputString):
 
 CMD_HELP.update({
     "img":
-    ">`.img <search_query>`"
-    "\nUsage: Does an image search on Google and shows 5 images.",
+    {
+        ".img":
+        "Does an image search on Google and shows 7 images."
+    },
     "currency":
-    ">`.currency <amount> <from> <to>`"
-    "\nUsage: Converts various currencies for you.",
+    {
+        ".currency":
+        "Converts various currencies for you.\n"
+        "**Hints**:\n>`.currency 1 IDR USD`"
+    },
     "carbon":
-    ">`.carbon <text> [or reply]`"
-    "\nUsage: Beautify your code using carbon.now.sh\n"
-    "Use .crblang <text> to set language for your code.",
+    {
+        ".carbon":
+        "Beautify your code using carbon.now.sh\n"
+        "**Hints**:\n>`.carbon` <text> [or reply]. "
+        "Use >`.crblang` <lang> to set language for your code."
+    },
     "google":
-    ">`.google <query>`"
-    "\nUsage: Does a search on Google.",
+    {
+        ".google":
+        "Does a search given value on Google."
+    },
     "wiki":
-    ">`.wiki <query>`"
-    "\nUsage: Does a search on Wikipedia.",
+    {
+        ".wiki":
+        "Does a search given value on Wikipedia."
+    },
     "ud":
-    ">`.ud <query>`"
-    "\nUsage: Does a search on Urban Dictionary.",
+    {
+        ".ud":
+        "Does a search given value on Urban Dictionary."
+    },
     "tts":
-    ">`.tts <text> [or reply]`"
-    "\nUsage: Translates text to speech for the language which is set."
-    "\nUse >`.lang tts <language code>` to set language for tts. (Default is English.)",
+    {
+        ".tts":
+        "Translates text to speech for the language which is set.\n"
+        "**Hints**:\n>`.tts` <text> [or reply]. "
+        "Use >`.lang tts` <language code> to set language for tts. "
+        "(Default is English.)"
+    },
     "trt":
-    ">`.trt <text> [or reply]`"
-    "\nUsage: Translates text to the language which is set."
-    "\nUse >`.lang trt <language code>` to set language for trt. (Default is English)",
+    {
+        ".trt":
+        "Translates text to the language which is set.\n"
+        "**Hints**:\n>`.trt` <text> [or reply]. "
+        "Use >`.lang trt` <language code> to set language for trt. "
+        "(Default is English)"
+    },
     "yt":
-    ">`.yt <text>`"
-    "\nUsage: Does a YouTube search.",
+    {
+        ".yt":
+        "Does a YouTube search."
+    },
     "imdb":
-    ">`.imdb <movie-name>`"
-    "\nUsage: Shows movie info and other stuff.",
+    {
+        ".imdb":
+        "Shows movie info and other stuff given value."
+    },
     "rip":
-    ">`.ripaudio <url> or ripvideo <url>`"
-    "\nUsage: Download videos and songs from YouTube "
-    "(and [many other sites](https://ytdl-org.github.io/youtube-dl/supportedsites.html))."
+    {
+        ".ripaudio":
+        "Download songs from YouTube. (and [many other sites]"
+        "(https://ytdl-org.github.io/youtube-dl/supportedsites.html)).",
+
+        ".ripvideo":
+        "Download videos from YouTube. (and [many other sites]"
+        "(https://ytdl-org.github.io/youtube-dl/supportedsites.html))."
+    }
 })

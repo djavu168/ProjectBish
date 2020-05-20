@@ -197,15 +197,21 @@ async def dyno_usage(dyno):
 
 CMD_HELP.update({
     "heroku":
-    ">.`usage`"
-    "\nUsage: Check your heroku dyno hours remaining"
-    "\n\n>`.set var <NEW VAR> <VALUE>`"
-    "\nUsage: add new variable or update existing value variable"
-    "\n!!! WARNING !!!, after setting a variable the bot will restarted"
-    "\n\n>`.get var or .get var <VAR>`"
-    "\nUsage: get your existing varibles, use it only on your private group!"
-    "\nThis returns all of your private information, please be caution..."
-    "\n\n>`.del var <VAR>`"
-    "\nUsage: delete existing variable"
-    "\n!!! WARNING !!!, after deleting variable the bot will restarted"
+    {
+        ".usage":
+        "Check your heroku dyno hours remaining",
+
+        ".set var":
+        "add new variable or update existing value variable.\n"
+        "!!! WARNING !!!, after setting a variable the bot will restarted\n"
+        "**Hints**:\n>`.set var PROJECT_BISH hmmm`",
+
+        ".get var":
+        "get your existing varibles.\n"
+        "**Hints**:\n>`.get var PROJECT_BISH` for specify variable you want.",
+
+        ".del var":
+        "delete existing given variable name.\n"
+        "!!! WARNING !!!, after deleting variable the bot will restarted"
+    }
 })

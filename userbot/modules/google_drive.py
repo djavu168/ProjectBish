@@ -1304,34 +1304,45 @@ async def check_progress_for_dl(gdrive, gid, previous):
 
 CMD_HELP.update({
     "gdrive":
-    ">`.gdauth`"
-    "\nUsage: generate token to enable all cmd google drive service."
-    "\nThis only need to run once in life time."
-    "\n\n>`.gdreset`"
-    "\nUsage: reset your token if something bad happened or change drive acc."
-    "\n\n>`.gd`"
-    "\nUsage: Upload file from local or uri/url/drivelink into google drive."
-    "\nfor drivelink it's upload only if you want to."
-    "\n\n>`.gdabort`"
-    "\nUsage: Abort process uploading or downloading."
-    "\n\n>`.gdlist`"
-    "\nUsage: Get list of folders and files with default size 50."
-    "\nUse flags `-l range[1-1000]` for limit output."
-    "\nUse flags `-p parents-folder_id` for lists given folder in gdrive."
-    "\n\n>`.gdf mkdir`"
-    "\nUsage: Create gdrive folder."
-    "\n\n>`.gdf chck`"
-    "\nUsage: Check file/folder in gdrive."
-    "\n\n>`.gdf rm`"
-    "\nUsage: Delete files/folders in gdrive."
-    "\nCan't be undone, this method skipping file trash, so be caution..."
-    "\n\n>`.gdfset put`"
-    "\nUsage: Change upload directory in gdrive."
-    "\n\n>`.gdfset rm`"
-    "\nUsage: remove set parentId from cmd\n>`.gdfset put` "
-    "into **G_DRIVE_FOLDER_ID** and if empty upload will go to root."
-    "\n\nNOTE:"
-    "\nfor >`.gdlist` you can combine -l and -p flags with or without name "
-    "at the same time, it must be `-l` flags first before use `-p` flags.\n"
-    "And by default it lists from latest 'modifiedTime' and then folders."
+    {
+        ".gdauth":
+        "Generate token to enable all cmd google drive service."
+        "This only need to run once in life time.",
+
+        ".gdreset":
+        "Reset your token if something bad happened or change drive acc.",
+
+        ".gd":
+        "Upload file from local or uri/url/drivelink into google drive."
+        "for drivelink it's upload only if you want to.",
+
+        ".gdabort":
+        "Abort process uploading or downloading.",
+
+        ".gdlist":
+        "Get list of folders and files with default size 50.\n"
+        "Use flags `-l range[1-1000]` for limit output.\n"
+        "Use flags `-p parents-folder_id` for lists given folder in gdrive.\n"
+        "NOTE:"
+        "for >`.gdlist` you can combine -l and -p flags with or without name"
+        "at the same time, it must be `-l` flags first before use `-p` flags."
+        "And by default it lists from latest 'modifiedTime' and then folders.",
+
+        ".gdf mkdir":
+        "Create gdrive folder.",
+
+        ".gdf chck":
+        "Check file/folder in gdrive.",
+
+        ".gdf rm":
+        "Delete files/folders in gdrive."
+        "Can't be undone, this method skipping file trash, so be caution...",
+
+        ".gdfset put":
+        "Change upload directory in gdrive.",
+
+        ".gdfset rm":
+        "remove set parentId from cmd >`.gdfset put` "
+        "into **G_DRIVE_FOLDER_ID** and if empty upload will go to root.",
+    }
 })

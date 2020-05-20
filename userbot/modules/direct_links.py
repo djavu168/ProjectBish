@@ -339,10 +339,11 @@ def useragent():
 
 CMD_HELP.update({
     "direct":
-    ">`.direct <url>`"
-    "\nUsage: Reply to a link or paste a URL to\n"
-    "generate a direct download link\n\n"
-    "List of supported URLs:\n"
-    "`Google Drive - Cloud Mail - Yandex.Disk - AFH - "
-    "ZippyShare - MediaFire - SourceForge - OSDN - GitHub`"
+    {
+        ".direct":
+        "Reply to a link or paste a URL to generate direct download link.\n\n"
+        "List of supported URLs:\n"
+        "`Google Drive - Cloud Mail - Yandex.Disk - AFH - "
+        "ZippyShare - MediaFire - SourceForge - OSDN - GitHub`"
+    }
 })
