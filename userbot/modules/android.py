@@ -192,7 +192,7 @@ async def download_api(dl):
             f" @ {humanbytes(speed)}`\n"
             f"`ETA` -> {time_formatter(eta)}"
         )
-        if round(diff % 10.00) == 0 and display_message != current_message or (
+        if round(diff % 15.00) == 0 and display_message != current_message or (
           downloaded == file_size):
             await dl.edit(current_message)
             display_message = current_message
@@ -298,16 +298,27 @@ async def twrp(request):
 
 CMD_HELP.update({
     "android":
-    ">`.magisk`"
-    "\nGet latest Magisk releases"
-    "\n\n>`.device <codename>`"
-    "\nUsage: Get info about android device codename or model."
-    "\n\n>`.codename <brand> <device>`"
-    "\nUsage: Search for android device codename."
-    "\n\n>`.pixeldl` **<download.pixelexperience.org>**"
-    "\nUsage: Download pixel experience ROM into your userbot server."
-    "\n\n>`.specs <brand> <device>`"
-    "\nUsage: Get device specifications info."
-    "\n\n>`.twrp <codename>`"
-    "\nUsage: Get latest twrp download for android device."
+    {
+        ".magisk":
+        "Get latest Magisk releases.",
+
+        ".device":
+        "Get info about android device codename or model.\n"
+        "**Hints**:\n>`.device whyred`",
+
+        ".codename":
+        "Search for android device codename.\n"
+        "**Hints**:\n>`.codename samsung s10+`",
+
+        ".pixeldl":
+        "Download pixel experience ROM into your userbot server.",
+
+        ".specs":
+        "Get device specifications info.\n"
+        "**Hints**:\n>`.specs samsung s20 ultra`",
+
+        ".twrp":
+        "Get latest twrp download for given supported codename device."
+        "**Hints**:\n>`.twrp raphael`"
+    }
 })

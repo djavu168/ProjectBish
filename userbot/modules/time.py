@@ -157,11 +157,17 @@ async def date_func(dat):
 
 CMD_HELP.update({
     "time":
-    ">`.time <country name/code> <timezone number>`"
-    "\nUsage: Get the time of a country. If a country has "
-    "multiple timezones, it will list all of them and let you select one.",
+    {
+        ".time":
+        "Get the time of a country. If a country has "
+        "multiple timezones, it will list all of them and let you select one."
+        "\n**Hints**:\n>`.time ID 1` for Jakarta"
+    },
     "date":
-    ">`.date <country name/code> <timezone number>`"
-    "\nUsage: Get the date of a country. If a country has "
-    "multiple timezones, it will list all of them and let you select one."
+    {
+        ".date":
+        "Get the date of a country. If a country has "
+        "multiple timezones, it will list all of them and let you select one."
+        "\n**Hints**:\n>`.date ID 1` for Jakarta"
+    }
 })

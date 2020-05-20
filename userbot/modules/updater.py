@@ -221,13 +221,17 @@ async def upstream(event):
 
 CMD_HELP.update({
     'update':
-    ">`.update`"
-    "\nUsage: Checks if the main userbot repository has any updates "
-    "and shows a changelog if so."
-    "\n\n>`.update now`"
-    "\nUsage: Update your userbot, "
-    "if there are any updates in your userbot repository."
-    "\n\n>`.update deploy`"
-    "\nUsage: Deploy your userbot"
-    "\nThis will triggered deploy always, even no updates."
+    {
+        ".update":
+        "Checks if the main userbot repository has any updates "
+        "and shows a changelog if so.",
+
+        ".update now":
+        "Update your userbot, "
+        "if there are any updates in your userbot repository.",
+
+        ".update deploy":
+        "Deploy your userbot.\n"
+        "This will triggered deploy always, even there are no updates."
+    }
 })

@@ -180,12 +180,18 @@ async def terminal_runner(term):
 
 CMD_HELP.update({
     "eval":
-    ">`.eval 2 + 3`"
-    "\nUsage: Evalute mini-expressions.",
+    {
+        '.eval':
+        'Usage: Evalute mini-expressions.'
+    },
     "exec":
-    ">`.exec print('hello')`"
-    "\nUsage: Execute small python scripts.",
+    {
+        '.exec':
+        'Usage: Execute small python scripts.'
+    },
     "term":
-    ">`.term <cmd>`"
-    "\nUsage: Run bash commands and scripts on your server."
+    {
+        '.term':
+        'Usage: Run bash commands and scripts on your server.'
+    }
 })

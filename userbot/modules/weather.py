@@ -132,6 +132,10 @@ async def get_weather(weather):
 
 CMD_HELP.update({
     "weather":
-    ">`.weather <city> or .weather <city>, <country name/code>`"
-    "\nUsage: Gets the weather of a city."
+    {
+        ".weather":
+        "Gets the weather of a city."
+        "**Hints**:\n"
+        ">`.weather` Jakarta | >`.weather` Jakarta, ID"
+    }
 })

@@ -79,15 +79,25 @@ async def spammer(e):
 
 CMD_HELP.update({
     "spam":
-    ">`.cspam <text>`"
-    "\nUsage: Spam the text letter by letter."
-    "\n\n>`.spam <count> <text>`"
-    "\nUsage: Floods text in the chat !!"
-    "\n\n>`.wspam <text>`"
-    "\nUsage: Spam the text word by word."
-    "\n\n>`.picspam <count> <link to image/gif>`"
-    "\nUsage: As if text spam was not enough !!"
-    "\n\n>`.delayspam <delay> <count> <text>`"
-    "\nUsage: .bigspam but with custom delay."
-    "\n\n\nNOTE : Spam at your own risk !!"
+    {
+        ".cspam":
+        "Spam the text letter by letter.\n"
+        "**Hints**:\n>`.cspam` <text>",
+
+        ".spam":
+        "Floods text in the chat !!\n"
+        "**Hints**:\n>`.spam` <count> <text>",
+
+        ".wspam":
+        "Spam the text word by word.\n"
+        "**Hints**:\n>`.wspam` <text>",
+
+        ".picspam":
+        "As if text spam was not enough !!\n"
+        "**Hints**:\n>`.picspam` <count> <link to image/gif>",
+
+        ".delayspam":
+        "bigspam but with custom delay.\n"
+        "**Hints**:\n >`.delayspam` <delay> <count> <text>"
+    }
 })
