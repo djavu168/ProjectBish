@@ -34,10 +34,6 @@ async def help(event):
                     if args == key:
                         usage = value
                         break
-                else:
-                    await event.edit(
-                        f"`There is no command or module`:  **{args}**.")
-                    return False
                 if cmd is not None and usage is not None:
                     string = (
                         "**Query**:\n\n"
@@ -46,6 +42,10 @@ async def help(event):
                         f"{usage}"
                     )
                     break
+                else:
+                    await event.edit(
+                        f"`There is no command or module`:  **{args}**.")
+                    return False
         await event.edit(string)
     else:
         string = (
