@@ -28,7 +28,7 @@ async def help(event):
                     string += f">`{cmd}`\n"
                     string += f"**Usage**:\n{usage}\n\n"
         else:
-            cmd, usage = None, None
+            usage = None
             for module in CMD_HELP:
                 for key, value in CMD_HELP.get(module).items():
                     await event.respond(key)
@@ -36,7 +36,7 @@ async def help(event):
                     if args == key:
                         usage = value
                         break
-                if cmd is not None and usage is not None:
+                if usage is not None:
                     string = (
                         "**Query**:\n\n"
                         f"    >`{args}`\n\n"
