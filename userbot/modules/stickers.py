@@ -234,8 +234,8 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            "`Sticker Lu gue embat!`"
-            f"\ntikerpek bisa dtemukan di[SANA](t.me/addstickers/{packname})",
+            "`tiker Lu Di embat nehh..!`"
+            f"\ntikerpek bisa lu temukan di [MANAHAYO](t.me/addstickers/{packname})",
             parse_mode='md')
 
 
