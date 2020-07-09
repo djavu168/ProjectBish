@@ -40,4 +40,4 @@ CMD_HELP.update({
         "\nUsage: Enhance ur text to strip line with anvil."
         "\n\nExample: `.fg USERBOT.3D`"
         "\n\nStyle: `slant`, `3D`, `5line`, `alpha`, `banner`, `doh`, `iso`, `letter`, `allig`, `dotm`, `bubble`, `bulb`, `digi`"
-})e
+})
