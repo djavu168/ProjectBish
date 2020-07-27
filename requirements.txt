@@ -46,3 +46,4 @@ python-dateutil
 git+https://github.com/johnwmillr/LyricsGenius.git
 pyfiglet
 covid
+regex
